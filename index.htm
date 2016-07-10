@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<scrpt src="jsmag.js"></script>
 		<title> Margaret Patrick</title>
 	<body>
 		<div id="navcontainer">
@@ -16,17 +17,32 @@
 			</ul>
 		</div>
 		<div id="titlepanel">
-			<h1>Margaret Patrick</h1>
+			<p id="sayHello"></p>
 			<h2>project portfolio</h2>
+			<script>
 
+		var yourName = prompt("what is your name?");
+
+		if(yourName != ""){
+			document.getElementById("sayHello").innerHTML = "hello " + yourName;
+		} else {
+			alert("Please enter a name next time");
+		}
+
+		</script>
 		</div>
-		<div id="projectdiv">
-			<h1> loren imbsome </h1>
-			<p> I am alone, in the three part mirror on the bathroom shelf, thank you for going back in time and twarting my assasin</p>
-		</div>
-		<div id="catproject">
-			<h1> cat of cats</h1>
-			<p> meow meow meow meow meow </p>
+		
+
+
+		<div id="projects">
+			<div id="projectdiv">
+				<h1> loren imbsome </h1>
+				<p> I am alone, in the three part mirror on the bathroom shelf, thank you for going back in time and twarting my assasin</p>
+			</div>
+			<div id="catproject">
+				<h1> cat of cats</h1>
+				<p> meow meow meow meow meow </p>
+			</div>
 		</div>
 	</body>
 </html>
